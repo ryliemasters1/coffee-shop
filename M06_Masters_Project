@@ -1,0 +1,110 @@
+>>> import tkinter as tk
+>>>
+>>> class CoffeeShopApp:
+...     def __init__(self, root):
+...         self.root = root
+...         self.root.title("Coffee Shop Order System")
+...
+>>>         # Create a variable to store the selected coffee
+>>>         self.selected_coffee = tk.StringVar()
+  File "<stdin>", line 1
+    self.selected_coffee = tk.StringVar()
+IndentationError: unexpected indent
+>>>
+>>>         # Coffee options
+>>>         self.coffee_options = [
+  File "<stdin>", line 1
+    self.coffee_options = [
+IndentationError: unexpected indent
+>>>             "Espresso",
+  File "<stdin>", line 1
+    "Espresso",
+IndentationError: unexpected indent
+>>>             "Cappuccino",
+  File "<stdin>", line 1
+    "Cappuccino",
+IndentationError: unexpected indent
+>>>             "Latte",
+  File "<stdin>", line 1
+    "Latte",
+IndentationError: unexpected indent
+>>>             "Mocha",
+  File "<stdin>", line 1
+    "Mocha",
+IndentationError: unexpected indent
+>>>             "Americano",
+  File "<stdin>", line 1
+    "Americano",
+IndentationError: unexpected indent
+>>>         ]
+  File "<stdin>", line 1
+    ]
+IndentationError: unexpected indent
+>>>
+>>>         # Create a label for the title
+>>>         title_label = tk.Label(root, text="Coffee Shop Order System", font=("Helvetica", 16))
+  File "<stdin>", line 1
+    title_label = tk.Label(root, text="Coffee Shop Order System", font=("Helvetica", 16))
+IndentationError: unexpected indent
+>>>         title_label.pack(pady=10)
+  File "<stdin>", line 1
+    title_label.pack(pady=10)
+IndentationError: unexpected indent
+>>>
+>>>         # Create a label and dropdown for coffee selection
+>>>         coffee_label = tk.Label(root, text="Select Coffee:")
+  File "<stdin>", line 1
+    coffee_label = tk.Label(root, text="Select Coffee:")
+IndentationError: unexpected indent
+>>>         coffee_label.pack()
+  File "<stdin>", line 1
+    coffee_label.pack()
+IndentationError: unexpected indent
+>>>         coffee_dropdown = tk.OptionMenu(root, self.selected_coffee, *self.coffee_options)
+  File "<stdin>", line 1
+    coffee_dropdown = tk.OptionMenu(root, self.selected_coffee, *self.coffee_options)
+IndentationError: unexpected indent
+>>>         coffee_dropdown.pack()
+  File "<stdin>", line 1
+    coffee_dropdown.pack()
+IndentationError: unexpected indent
+>>>
+>>>         # Create a button to submit the order
+>>>         submit_button = tk.Button(root, text="Submit Order", command=self.submit_order)
+  File "<stdin>", line 1
+    submit_button = tk.Button(root, text="Submit Order", command=self.submit_order)
+IndentationError: unexpected indent
+>>>         submit_button.pack(pady=10)
+  File "<stdin>", line 1
+    submit_button.pack(pady=10)
+IndentationError: unexpected indent
+>>>
+>>>         # Create a label to display the order
+>>>         self.order_label = tk.Label(root, text="", font=("Helvetica", 12))
+  File "<stdin>", line 1
+    self.order_label = tk.Label(root, text="", font=("Helvetica", 12))
+IndentationError: unexpected indent
+>>>         self.order_label.pack()
+  File "<stdin>", line 1
+    self.order_label.pack()
+IndentationError: unexpected indent
+>>>
+>>>     def submit_order(self):
+  File "<stdin>", line 1
+    def submit_order(self):
+IndentationError: unexpected indent
+>>>         coffee = self.selected_coffee.get()
+  File "<stdin>", line 1
+    coffee = self.selected_coffee.get()
+IndentationError: unexpected indent
+>>>         self.order_label.config(text=f"You ordered a {coffee}!")
+  File "<stdin>", line 1
+    self.order_label.config(text=f"You ordered a {coffee}!")
+IndentationError: unexpected indent
+>>>         # You can add more logic here to process the order, update a database, etc.
+>>>
+>>> if __name__ == "__main__":
+...     root = tk.Tk()
+...     app = CoffeeShopApp(root)
+...     root.mainloop()
+...
